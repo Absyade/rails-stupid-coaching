@@ -1,0 +1,9 @@
+<h1>Stupid Coach</h1>
+<p>Ask your coach anything your want !</p>
+
+<form action="/answer" method="get">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input class="inputting" type="text" name="user_question_key" placeholder="What's up?">
+  <input class="button" type="submit" value="Ask Bro !">
+</form>
+
